@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cabecalho {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000000d;
+    height: 200px;
+}
+
+.title {
+    margin-left: 25px;
+    font-family: 'Harry Potter', sans-serif;
+    color: #e8e7e5;
+    width: 650px;
+    font-weight: 480;
+    font-size: 42px;
+    z-index: 1;
+    top: 0;
+}
+
+.harry {
+    margin-top: 70px;
+    position: absolute;
+    width: 150px;
+    animation: harry-animation 10s infinite linear;
+    z-index: 2;
+}
+@keyframes harry-animation {
+    from {
+        left: -50%;
+
+    
+    }
+    to {
+        left: 100%;
+    }
+}

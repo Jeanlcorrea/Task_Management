@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/cabecalho.css">
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <script type="text/javascript" src="./Javascript/javascript.js"></script>
+    <script type="text/javascript" src="./Javascript/projetos.js"></script>
+    <title>Projeto Euax</title>
+</head>
+    <header>
+        <nav class="cabecalho" >
+            <ul>
+                <h1 class="title">GESTÃO DE POÇÕES E FEITIÇOS</h1>
+            </ul>
+            <img class="harry" src="./CSS/gifpotter.gif"  height="130px">
+        </nav>
+        </div>
+    </header>
+
+    <!--AQUI INICIAMOS AS PAGINAS DE PROJETOS E ATIVIDADES-->
+
+<body class="body" page="cadastro">
+    <div id="lista-registros">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>DATA INICIO</th>
+                    <th>DATA FIM</th>
+                    <th>ATRASADO?</th>
+                    <th>FERRAMENTAS E ACESSO</th>
+                </tr>
+                <tbody id="listaRegistrosBody"></tbody>
+            </thead>
+        </table>
+        <div>
+            <button onclick="visualizar('cadastro', true)">NOVO CADASTRO</button>
+        </div>
+    </div>
+    <div id="projeto-registro">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID PROJETO</th>
+                    <th>ID ATIVIDADE</th>
+                    <th>NOME ATIVIDADE</th>
+                    <th>DATA INICIO</th>
+                    <th>DATA FIM</th>
+                    <th>FINALIZADA?</th>
+                    <div class="form-group">
+                        <label for="meter">PROGRESSO</label>
+                        <meter  min="0" max="100" value="60" low="15">60</meter>
+                    </div>
+                    <th>FERRAMENTAS</th>
+                </tr>
+            </thead>
+            <tfoot id="listaProjetosBody"></tfoot>
+        </table>
+
+    <form id="novoprojeto">
+        <div>ID PROJETO</div>
+            <div>
+                <input class="projeto" id="idprojeto" readonly type="text">
+            </div>
+
+        <div>ID ATIVIDADE</div>
+            <div>
+                <input class="projeto" id="idatividade" type="number">
+            </div>
+
+        <div>NOME ATIVIDADE</div>
+            <div>
+                <input class="projeto" id="nomeatividade" type="text">
+            </div>
+
+        <div>FINALIZADA?</div>
+            <div>
+                <input class="projeto" id="checkbox" type="text">
+            </div>
+
+        <div>DATA INÍCIO</div>
+            <div>
+                <input class="projeto" id="datadeinicio" type="date">
+            </div>
+
+        <div>DATA FIM</div>
+            <div>
+                <input class="projeto" id="datadefim" type="date">
+            </div>
+                <button id="novaatividade">NOVA ATIVIDADE</button>
+                <button type="button" onclick="visualizar('lista')" id="voltarlistas">VOLTAR</button>
+            </div>
+        
+            <!--AQUI INICIAMOS A PAGINA DE CADASTRO-->
+    </form>
+    <form id="cadastro-registros">
+
+        <div class="label">
+            <div>ID</div>
+            <div>
+                <input type="number" readonly id="id"/>
+            </div>
+        </div>
+
+        <div class="label">
+            <div>Nome</div>
+            <div>
+                <input id="nome"/>
+            </div>
+        </div>
+
+        <div class="label">
+            <div>Data de Início</div>
+            <div>
+                <input type="date" id="datainicio"/>
+            </div>
+        </div>
+
+        <div class="label">
+            <div>Data de Fim</div>
+            <div>
+                <input type="date" id="datafim" />
+            </div>
+
+        <div>
+            <button >SALVAR</button>
+            <button onclick="visualizar('lista')" class="red" type="button">CANCELAR</button>
+            <button onclick="visualizar('lista')" type="button" class="meusprojetos">MEUS PROJETOS</button>
+        </div>
+    </form>
+</body>
+</html>
