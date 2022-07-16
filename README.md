@@ -28,7 +28,7 @@
 - [x] Criar Projeto
 - [x] Deletar/Editar Projeto
 - [x] Criar Atividade
-- [⚠️] Editar/Criar Atividade
+- [x] Editar/Criar Atividade
 
 ---
 
